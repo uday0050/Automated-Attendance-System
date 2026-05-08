@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "GeoAttend",
+    "slug": "geoattend",
+    "sdkVersion": "37.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#00796B"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.udayboiii.geoattend",
+      "versionCode": 1,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "GeoAttend needs your location to verify you are inside the classroom before marking attendance.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "GeoAttend needs your location for GPS-based attendance tracking."
+      }
+    }
+  }
+}
